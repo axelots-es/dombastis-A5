@@ -146,61 +146,230 @@
         <button type="button" class="filter-btn" data-filter="produk" aria-pressed="false">Produk</button>
         <button type="button" class="filter-btn" data-filter="olahan" aria-pressed="false">Olahan</button>
         <button type="button" class="filter-btn" data-filter="proses" aria-pressed="false">Proses</button>
-      </div>
-
-      <!-- Grid -->
+            <!-- Grid 12 Foto Mewah -->
       <div class="row g-4" id="galleryGrid">
-        <div class="col-md-4" data-category="produk">
-          <button type="button" class="border-0 bg-transparent p-0 w-100" data-lightbox
-            data-src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=1600&q=80"
-            data-alt="Rack of Lamb premium Grade A5 di atas talenan kayu"
-            data-caption="Rack of Lamb Premium — Dombastis A5">
-            <img
-              src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=800&q=70&fm=webp"
-              srcset="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=480&q=65&fm=webp 480w,
-                         https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=800&q=70&fm=webp 800w"
-              sizes="(max-width: 767px) 100vw, 33vw" width="800" height="600" loading="lazy" decoding="async"
-              alt="Rack of Lamb premium Grade A5 di atas talenan kayu" class="img-fluid rounded-4 shadow-sm"
-              style="height: 280px; width: 100%; object-fit: cover;">
-          </button>
+        <!-- 1: Produk - French Rack -->
+        <div class="col-md-6 col-lg-4" data-category="produk">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Rack of Lamb premium Grade A5 di atas talenan kayu"
+              data-caption="French Rack of Lamb Premium Grade A5 — Dombastis A5">
+              <img
+                src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Rack of Lamb premium Grade A5 di atas talenan kayu" class="img-fluid w-100"
+                style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-warning text-dark small mb-1">Produk Segar</span>
+                <h3 class="h6 fw-bold mb-0 text-white">French Rack of Lamb A5</h3>
+                <small class="text-white-50">Iga bertulang bersih untuk fine dining</small>
+              </div>
+            </button>
+          </div>
         </div>
-        <div class="col-md-4" data-category="olahan">
-          <button type="button" class="border-0 bg-transparent p-0 w-100" data-lightbox
-            data-src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80"
-            data-alt="Lamb chops panggang dengan bumbu rosemary" data-caption="Lamb Chops Grill — Siap Disajikan">
-            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=70&fm=webp"
-              srcset="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=480&q=65&fm=webp 480w,
-                         https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=70&fm=webp 800w"
-              sizes="(max-width: 767px) 100vw, 33vw" width="800" height="600" loading="lazy" decoding="async"
-              alt="Lamb chops panggang dengan bumbu rosemary" class="img-fluid rounded-4 shadow-sm"
-              style="height: 280px; width: 100%; object-fit: cover;">
-          </button>
+
+        <!-- 2: Olahan - Lamb Chops Grill -->
+        <div class="col-md-6 col-lg-4" data-category="olahan">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Lamb chops panggang dengan bumbu rosemary" data-caption="Lamb Chops Grill Rosemary — Siap Disajikan">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Lamb chops panggang dengan bumbu rosemary" class="img-fluid w-100"
+                style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-warning text-dark small mb-1">Olahan Kuliner</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Grilled Lamb Chops Rosemary</h3>
+                <small class="text-white-50">Tekstur lembut beraroma butter & herba</small>
+              </div>
+            </button>
+          </div>
         </div>
-        <div class="col-md-4" data-category="olahan">
-          <button type="button" class="border-0 bg-transparent p-0 w-100" data-lightbox
-            data-src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1600&q=80"
-            data-alt="Sate domba premium yang dibakar di atas panggangan" data-caption="Sate Domba Premium">
-            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=70&fm=webp"
-              srcset="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=480&q=65&fm=webp 480w,
-                         https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=70&fm=webp 800w"
-              sizes="(max-width: 767px) 100vw, 33vw" width="800" height="600" loading="lazy" decoding="async"
-              alt="Sate domba premium yang dibakar di atas panggangan" class="img-fluid rounded-4 shadow-sm"
-              style="height: 280px; width: 100%; object-fit: cover;">
-          </button>
+
+        <!-- 3: Olahan - Sate Domba -->
+        <div class="col-md-6 col-lg-4" data-category="olahan">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Sate domba premium yang dibakar di atas panggangan" data-caption="Sate Domba Bakar Premium — Cita Rasa Nusantara">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Sate domba premium yang dibakar di atas panggangan" class="img-fluid w-100"
+                style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-warning text-dark small mb-1">Olahan Kuliner</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Sate Domba Bakar Juicy</h3>
+                <small class="text-white-50">Daging empuk tanpa lemak alot berlebih</small>
+              </div>
+            </button>
+          </div>
         </div>
-        <div class="col-md-4" data-category="proses">
-          <button type="button" class="border-0 bg-transparent p-0 w-100" data-lightbox
-            data-src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=80"
-            data-alt="Peternakan domba sehat dengan pakan berkualitas"
-            data-caption="Peternakan Domba Sehat — Sumber Dombastis A5">
-            <img
-              src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=70&fm=webp"
-              srcset="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=480&q=65&fm=webp 480w,
-                         https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=70&fm=webp 800w"
-              sizes="(max-width: 767px) 100vw, 33vw" width="800" height="600" loading="lazy" decoding="async"
-              alt="Peternakan domba sehat dengan pakan berkualitas" class="img-fluid rounded-4 shadow-sm"
-              style="height: 280px; width: 100%; object-fit: cover;">
-          </button>
+
+        <!-- 4: Proses - Peternakan Sehat -->
+        <div class="col-md-6 col-lg-4" data-category="proses">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Peternakan domba sehat dengan pakan berkualitas"
+              data-caption="Peternakan Domba Sehat — Sumber Bahan Dombastis A5">
+              <img
+                src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Peternakan domba sehat dengan pakan berkualitas" class="img-fluid w-100"
+                style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-info text-dark small mb-1">Proses & Peternakan</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Padang Hijau Terawat</h3>
+                <small class="text-white-50">Pakan alami organik bebas hormon sintetis</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5: Produk - Lamb Shank -->
+        <div class="col-md-6 col-lg-4" data-category="produk">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Lamb Shank segar berkualitas" data-caption="Lamb Shank Segar — Kaya Gelatin & Kolagen">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Lamb Shank segar" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-warning text-dark small mb-1">Produk Segar</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Lamb Shank Utuh</h3>
+                <small class="text-white-50">Potongan betis ideal untuk sup & semur</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- 6: Produk - Shoulder & Loin Cut -->
+        <div class="col-md-6 col-lg-4" data-category="produk">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Potongan shoulder slice presisi" data-caption="Shoulder Slice Daging Domba — Marbling Gurih">
+              <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Potongan shoulder slice" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-warning text-dark small mb-1">Produk Segar</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Shoulder Slice Presisi</h3>
+                <small class="text-white-50">Lapisan gurih untuk gulai & rendang</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- 7: Olahan - Stew Lamb Shank -->
+        <div class="col-md-6 col-lg-4" data-category="olahan">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Hidangan Slow Cooked Lamb Shank" data-caption="Slow-Cooked Lamb Shank — Lepas Tulang Sempurna">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Hidangan Lamb Shank" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-warning text-dark small mb-1">Olahan Kuliner</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Slow-Cooked Lamb Stew</h3>
+                <small class="text-white-50">Kuah rempah kental meresap sempurna</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- 8: Olahan - BBQ Gathering Plate -->
+        <div class="col-md-6 col-lg-4" data-category="olahan">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Piring saji BBQ daging domba marinasi" data-caption="Piring BBQ Daging Domba — Siap Santap Hangat">
+              <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Piring saji BBQ" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-warning text-dark small mb-1">Olahan Kuliner</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Platter BBQ Gathering</h3>
+                <small class="text-white-50">Hidangan favorit pesta akhir pekan</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- 9: Proses - Butcher Higienis Steril -->
+        <div class="col-md-6 col-lg-4" data-category="proses">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Ruang butchery higienis bersuhu dingin" data-caption="Ruang Butcher Steril — Kontrol Higienitas Ketat">
+              <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Ruang butcher steril" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-info text-dark small mb-1">Proses & Peternakan</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Ruang Butcher Steril</h3>
+                <small class="text-white-50">Suhu terkontrol dengan standar sanitasi tinggi</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- 10: Proses - Vacuum Sealed Packing -->
+        <div class="col-md-6 col-lg-4" data-category="proses">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Pengemasan Vacuum Sealed Hampa Udara" data-caption="Kemasan Vacuum Sealed Food-Grade — Kualitas Segar Terkunci">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Pengemasan vacuum sealed" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-info text-dark small mb-1">Proses & Peternakan</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Vacuum Sealed Packaging</h3>
+                <small class="text-white-50">Menjaga kelembapan dan kesegaran seluler</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- 11: Produk - Daging Dadu & Giling -->
+        <div class="col-md-6 col-lg-4" data-category="produk">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Daging domba potong dadu tanpa tulang" data-caption="Boneless Lamb Cubes — Siap Tusuk & Masak">
+              <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Daging domba dadu" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-warning text-dark small mb-1">Produk Segar</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Boneless Diced Meat</h3>
+                <small class="text-white-50">Potongan dadu rapi untuk sate & curry</small>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- 12: Proses - Distribusi Rantai Dingin 0-4°C -->
+        <div class="col-md-6 col-lg-4" data-category="proses">
+          <div class="gallery-grid-card">
+            <button type="button" class="border-0 bg-transparent p-0 w-100 text-start" data-lightbox
+              data-src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=80"
+              data-alt="Distribusi Rantai Dingin Cold Chain" data-caption="Armada Pendingin Cold Chain 0-4°C — Antar Segar ke Tujuan">
+              <img src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=70&fm=webp"
+                width="800" height="600" loading="lazy" decoding="async"
+                alt="Distribusi dingin" class="img-fluid w-100" style="height: 280px; object-fit: cover;">
+              <div class="gallery-overlay-info">
+                <span class="badge bg-info text-dark small mb-1">Proses & Peternakan</span>
+                <h3 class="h6 fw-bold mb-0 text-white">Logistik Cold Chain 0-4°C</h3>
+                <small class="text-white-50">Suhu terjaga stabil hingga ke pintu pemesan</small>
+              </div>
+            </button>
+          </div>
         </div>
       </div>
 
