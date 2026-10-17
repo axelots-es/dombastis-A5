@@ -1,0 +1,18 @@
+{
+    "name": "Dombastis A5 — Daging Domba Premium",
+    "short_name": "Dombastis A5",
+    "description": "Supplier daging domba segar Grade A5 halal & higienis.",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#120E0C",
+    "theme_color": "#EA580C",
+    "lang": "id-ID",
+    "icons": [
+        {
+            "src": "image/logo-fix.webp",
+            "sizes": "any",
+            "type": "image/webp",
+            "purpose": "any maskable"
+        }
+    ]
+}

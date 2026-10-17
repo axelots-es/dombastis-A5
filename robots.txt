@@ -1,0 +1,35 @@
+# robots.txt Dombastis A5
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /*.json$
+
+# Crawler pencarian/jawaban AI (izinkan untuk sitasi)
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Kontrol penggunaan untuk pelatihan model (opsional, sesuai kebijakan bisnis)
+# User-agent: GPTBot
+# Disallow: /
+# User-agent: Google-Extended
+# Disallow: /
+
+Sitemap: https://dombastis-a5.com/sitemap.xml
