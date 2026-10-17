@@ -1,18 +1,111 @@
 {
-    "name": "Dombastis A5 — Daging Domba Premium",
-    "short_name": "Dombastis A5",
-    "description": "Supplier daging domba segar Grade A5 halal & higienis.",
-    "start_url": "/index.html",
+    "name": "DOMBASTIS — Daging Domba Premium Grade A5",
+    "short_name": "DOMBASTIS",
+    "description": "Supplier daging domba segar premium Grade A5 halal & higienis untuk keluarga, aqiqah, hajatan, resto & katering di Nganjuk, Jawa Timur.",
+    "id": "/",
+    "start_url": "/index.html?utm_source=pwa",
+    "scope": "/",
     "display": "standalone",
+    "display_override": [
+        "standalone",
+        "minimal-ui",
+        "browser"
+    ],
+    "orientation": "portrait-primary",
     "background_color": "#120E0C",
     "theme_color": "#EA580C",
     "lang": "id-ID",
+    "dir": "ltr",
+    "categories": [
+        "food",
+        "shopping",
+        "business"
+    ],
+    "prefer_related_applications": false,
     "icons": [
         {
             "src": "image/logo-fix.webp",
             "sizes": "any",
             "type": "image/webp",
+            "purpose": "any"
+        },
+        {
+            "src": "image/logo-fix.webp",
+            "sizes": "any",
+            "type": "image/webp",
+            "purpose": "maskable"
+        },
+        {
+            "src": "image/logo-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "image/logo-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
             "purpose": "any maskable"
         }
-    ]
+    ],
+    "shortcuts": [
+        {
+            "name": "Katalog Paket",
+            "short_name": "Paket",
+            "description": "Lihat katalog paket daging domba premium",
+            "url": "/paket.html",
+            "icons": [
+                {
+                    "src": "image/logo-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Pesan via WhatsApp",
+            "short_name": "Pesan",
+            "description": "Konsultasi & pesan daging domba langsung via WhatsApp",
+            "url": "/kontak.html",
+            "icons": [
+                {
+                    "src": "image/logo-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        },
+        {
+            "name": "Layanan Aqiqah",
+            "short_name": "Aqiqah",
+            "description": "Konsultasi paket aqiqah syariah",
+            "url": "/paket.html#aqiqah",
+            "icons": [
+                {
+                    "src": "image/logo-192.png",
+                    "sizes": "192x192",
+                    "type": "image/png"
+                }
+            ]
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "image/screenshot-home.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Beranda DOMBASTIS - Daging Domba Premium Grade A5"
+        },
+        {
+            "src": "image/screenshot-mobile.png",
+            "sizes": "540x720",
+            "type": "image/png",
+            "form_factor": "narrow",
+            "label": "Tampilan mobile DOMBASTIS"
+        }
+    ],
+    "related_applications": [],
+    "iarc_rating_id": "",
+    "scope_extensions": []
 }

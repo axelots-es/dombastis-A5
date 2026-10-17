@@ -1,10 +1,53 @@
-# robots.txt Dombastis A5
+# ============================================================
+# robots.txt — DOMBASTIS (https://dombastis.web.id)
+# Supplier Daging Domba Segar Premium Grade A5
+# Diperbarui: 2026-10-17
+# ============================================================
+
+# ------------------------------------------------------------
+# Aturan Umum — Semua Crawler
+# ------------------------------------------------------------
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
 Disallow: /*.json$
+Disallow: /*?sessionid=
+Disallow: /*?utm_
 
-# Crawler pencarian/jawaban AI (izinkan untuk sitasi)
+# ------------------------------------------------------------
+# Crawler Mesin Pencari Utama
+# ------------------------------------------------------------
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# ------------------------------------------------------------
+# Crawler AI / Answer Engine Optimization (AEO)
+# Diizinkan agar konten dapat disitasi dalam jawaban AI
+# ------------------------------------------------------------
 User-agent: OAI-SearchBot
 Allow: /
 
@@ -17,19 +60,68 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
-User-agent: Googlebot
+User-agent: Claude-Web
 Allow: /
 
-User-agent: Bingbot
+User-agent: YouBot
 Allow: /
 
-User-agent: Applebot
+User-agent: Amazonbot
 Allow: /
 
-# Kontrol penggunaan untuk pelatihan model (opsional, sesuai kebijakan bisnis)
+User-agent: cohere-ai
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: PhindBot
+Allow: /
+
+User-agent: AndiBot
+Allow: /
+
+User-agent: TavilyBot
+Allow: /
+
+# ------------------------------------------------------------
+# Kontrol Pelatihan Model AI (Opsional — Sesuai Kebijakan Bisnis)
+# Uncomment baris di bawah jika TIDAK ingin konten dipakai untuk training
+# ------------------------------------------------------------
 # User-agent: GPTBot
 # Disallow: /
+#
 # User-agent: Google-Extended
 # Disallow: /
+#
+# User-agent: CCBot
+# Disallow: /
+#
+# User-agent: anthropic-ai
+# Disallow: /
+#
+# User-agent: Bytespider
+# Disallow: /
 
-Sitemap: https://dombastis-a5.com/sitemap.xml
+# ------------------------------------------------------------
+# Blokir Bot Spam & Scraper Agresif
+# ------------------------------------------------------------
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: BLEXBot
+Crawl-delay: 10
+
+# ------------------------------------------------------------
+# Sitemap
+# ------------------------------------------------------------
+Sitemap: https://dombastis.web.id/sitemap.xml
