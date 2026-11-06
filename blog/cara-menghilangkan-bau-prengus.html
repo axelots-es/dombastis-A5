@@ -17,8 +17,7 @@
     <meta property="og:title" content="5 Cara Efektif Menghilangkan Bau Prengus Daging Domba">
     <meta property="og:description" content="Panduan chef: rempah alami untuk hasil daging domba empuk & harum.">
     <meta property="og:url" content="https://dombastis.web.id/blog/cara-menghilangkan-bau-prengus.html">
-    <meta property="og:image"
-        content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&h=630&q=75&fm=webp">
+    <meta property="og:image" content="foto-cut-custom-daging.webp">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="article:published_time" content="2026-10-16T08:00:00+07:00">
@@ -175,13 +174,23 @@
             margin-bottom: 1.25rem;
         }
 
-        .author-avatar img {
+        .author-avatar {
+            flex-shrink: 0;
             width: 52px;
             height: 52px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .author-avatar img {
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1 / 1;
             object-fit: cover;
             border-radius: 50%;
             border: 2px solid #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, .12);
+            display: block;
         }
 
         .author-info {
@@ -790,22 +799,32 @@
         /* Author bio */
         .author-bio {
             display: flex;
-            gap: 1.1rem;
+            gap: 1.25rem;
             align-items: center;
             background: var(--dm-slate-50);
             border: 1px solid var(--dm-slate-200);
             border-radius: var(--dm-radius);
-            padding: 1.25rem;
+            padding: 1.35rem;
             margin: 2rem 0 1.5rem;
         }
 
+        .author-bio .avatar {
+            flex-shrink: 0;
+            width: 76px;
+            height: 76px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
         .author-bio .avatar img {
-            width: 72px;
-            height: 72px;
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1 / 1;
             object-fit: cover;
             border-radius: 50%;
             border: 3px solid #fff;
-            box-shadow: 0 3px 12px rgba(15, 23, 42, .15);
+            box-shadow: 0 4px 14px rgba(15, 23, 42, .15);
+            display: block;
         }
 
         .author-bio h4 {
@@ -835,6 +854,9 @@
             .author-bio {
                 flex-direction: column;
                 text-align: center;
+                align-items: center;
+                gap: .9rem;
+                padding: 1.25rem 1rem;
             }
         }
 
@@ -843,7 +865,7 @@
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: .5rem;
+            gap: .65rem;
             padding: 1.25rem 0;
             border-top: 1px solid var(--dm-slate-200);
             border-bottom: 1px solid var(--dm-slate-200);
@@ -851,63 +873,93 @@
         }
 
         .share-section .label {
-            font-size: .82rem;
+            font-size: .84rem;
             font-weight: 700;
             color: var(--dm-slate-700);
-            margin-right: .5rem;
+            margin-right: .3rem;
             display: inline-flex;
             align-items: center;
             gap: .4rem;
         }
 
-        .share-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: .4rem;
-            border: 1px solid var(--dm-slate-200);
-            background: #fff;
-            color: var(--dm-slate-700);
-            padding: .45rem .8rem;
-            border-radius: 50px;
-            font-size: .78rem;
-            font-weight: 600;
+        .share-section .share-btn {
+            width: auto !important;
+            height: auto !important;
+            min-height: 38px;
+            padding: .48rem .95rem !important;
+            border-radius: 50px !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: .45rem !important;
+            white-space: nowrap !important;
+            border: 1px solid var(--dm-slate-200) !important;
+            background: #fff !important;
+            color: var(--dm-slate-700) !important;
+            font-size: .82rem !important;
+            font-weight: 600 !important;
+            line-height: 1 !important;
             cursor: pointer;
-            transition: all .18s ease;
+            text-decoration: none;
+            transition: all .2s ease;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, .04);
         }
 
-        .share-btn:hover {
+        .share-section .share-btn svg {
+            width: 15px;
+            height: 15px;
+            flex-shrink: 0;
+        }
+
+        .share-section .share-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(15, 23, 42, .1);
+            box-shadow: 0 6px 14px rgba(15, 23, 42, .12);
         }
 
-        .share-btn.whatsapp:hover {
-            background: #25D366;
-            color: #fff;
-            border-color: #25D366;
+        .share-section .share-btn.whatsapp:hover {
+            background: #25D366 !important;
+            color: #fff !important;
+            border-color: #25D366 !important;
         }
 
-        .share-btn.facebook:hover {
-            background: #1877F2;
-            color: #fff;
-            border-color: #1877F2;
+        .share-section .share-btn.facebook:hover {
+            background: #1877F2 !important;
+            color: #fff !important;
+            border-color: #1877F2 !important;
         }
 
-        .share-btn.twitter:hover {
-            background: #000;
-            color: #fff;
-            border-color: #000;
+        .share-section .share-btn.twitter:hover {
+            background: #000 !important;
+            color: #fff !important;
+            border-color: #000 !important;
         }
 
-        .share-btn.linkedin:hover {
-            background: #0A66C2;
-            color: #fff;
-            border-color: #0A66C2;
+        .share-section .share-btn.linkedin:hover {
+            background: #0A66C2 !important;
+            color: #fff !important;
+            border-color: #0A66C2 !important;
         }
 
-        .share-btn.copy:hover {
-            background: var(--dm-slate-700);
-            color: #fff;
-            border-color: var(--dm-slate-700);
+        .share-section .share-btn.copy:hover {
+            background: var(--dm-slate-700) !important;
+            color: #fff !important;
+            border-color: var(--dm-slate-700) !important;
+        }
+
+        @media (max-width: 575px) {
+            .share-section {
+                gap: .5rem;
+            }
+
+            .share-section .label {
+                width: 100%;
+                margin-bottom: .25rem;
+            }
+
+            .share-section .share-btn {
+                padding: .45rem .8rem !important;
+                font-size: .78rem !important;
+            }
         }
 
         /* Sidebar */
@@ -1084,10 +1136,25 @@
             border-radius: 3px;
         }
 
-        .recommendations.grid-240 {
+        .recommendations.grid-3-col {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 1.25rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.75rem;
+            width: 100%;
+        }
+
+        @media (max-width: 991px) {
+            .recommendations.grid-3-col {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.25rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .recommendations.grid-3-col {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
         }
 
         .recommend-item {
@@ -1095,48 +1162,69 @@
             border: 1px solid var(--dm-slate-200);
             border-radius: var(--dm-radius);
             overflow: hidden;
-            transition: all .22s ease;
+            display: flex;
+            flex-direction: column;
+            transition: all .25s ease;
+            box-shadow: 0 4px 14px rgba(15, 23, 42, .05);
         }
 
         .recommend-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 28px rgba(15, 23, 42, .12);
+            transform: translateY(-5px);
+            box-shadow: 0 16px 32px rgba(15, 23, 42, .14);
             border-color: #fed7aa;
+        }
+
+        .recommend-item .thumb {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background: #f1f5f9;
         }
 
         .recommend-item .thumb img {
             width: 100%;
-            height: 160px;
+            height: 220px;
             object-fit: cover;
+            display: block;
+            transition: transform .35s ease;
+        }
+
+        .recommend-item:hover .thumb img {
+            transform: scale(1.05);
         }
 
         .recommend-item .body {
-            padding: 1rem;
+            padding: 1.35rem;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
         }
 
         .prod-cat-label {
             display: inline-block;
-            font-size: .65rem;
+            align-self: flex-start;
+            font-size: .68rem;
             font-weight: 800;
             text-transform: uppercase;
             letter-spacing: .05em;
             color: var(--dm-orange);
             background: #fff7ed;
-            padding: .2rem .55rem;
+            padding: .25rem .6rem;
             border-radius: 50px;
-            margin-bottom: .5rem;
+            margin-bottom: .6rem;
         }
 
         .recommend-item h4 {
-            font-size: .95rem;
-            font-weight: 700;
-            margin: 0 0 .4rem;
-            line-height: 1.3;
+            font-size: 1.08rem;
+            font-weight: 800;
+            margin: 0 0 .45rem;
+            line-height: 1.35;
         }
 
         .recommend-item h4 a {
             color: #0f172a;
             text-decoration: none;
+            transition: color .18s ease;
         }
 
         .recommend-item h4 a:hover {
@@ -1144,17 +1232,27 @@
         }
 
         .recommend-item p {
-            font-size: .8rem;
+            font-size: .84rem;
             color: var(--dm-slate-500);
-            line-height: 1.55;
-            margin: 0 0 .6rem;
+            line-height: 1.6;
+            margin: 0 0 1.1rem;
+            flex: 1;
         }
 
         .prod-card-link-auto {
-            font-size: .8rem;
+            font-size: .84rem;
             font-weight: 700;
             color: var(--dm-orange);
             text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: .35rem;
+            margin-top: auto;
+            transition: gap .18s ease;
+        }
+
+        .prod-card-link-auto:hover {
+            gap: .55rem;
         }
 
         /* CTA banner */
@@ -1198,82 +1296,49 @@
             transform: translateY(-2px);
         }
 
-        /* Floating WA & back to top */
-        .float-wa {
-            position: fixed;
-            bottom: 24px;
-            right: 24px;
-            width: 56px;
-            height: 56px;
-            background: #25D366;
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.6rem;
-            box-shadow: 0 6px 20px rgba(37, 211, 102, .4);
-            z-index: 1040;
-            text-decoration: none;
-            transition: transform .18s ease;
-        }
+        /* Mobile Refinement */
+        @media (max-width: 767px) {
+            .article-header h1 {
+                font-size: 1.5rem;
+                line-height: 1.28;
+                word-break: break-word;
+            }
 
-        .float-wa:hover {
-            transform: scale(1.08);
-            color: #fff;
-        }
+            .article-content h2 {
+                font-size: 1.25rem;
+                margin: 1.8rem 0 .8rem;
+            }
 
-        .float-wa .tooltip {
-            position: absolute;
-            right: 100%;
-            top: 50%;
-            transform: translateY(-50%);
-            background: #0f172a;
-            color: #fff;
-            font-size: .75rem;
-            font-weight: 600;
-            padding: .45rem .8rem;
-            border-radius: 8px;
-            white-space: nowrap;
-            margin-right: .6rem;
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity .2s ease;
-        }
+            .article-content h3 {
+                font-size: 1.05rem;
+            }
 
-        .float-wa:hover .tooltip {
-            opacity: 1;
-        }
+            .article-summary {
+                padding: 1rem 1.1rem;
+            }
 
-        .back-to-top {
-            position: fixed;
-            bottom: 90px;
-            right: 24px;
-            width: 44px;
-            height: 44px;
-            background: #fff;
-            color: var(--dm-orange);
-            border: 1px solid var(--dm-slate-200);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            z-index: 1039;
-            box-shadow: 0 4px 14px rgba(15, 23, 42, .1);
-            opacity: 0;
-            visibility: hidden;
-            transition: all .25s ease;
-        }
+            .answer-first-box {
+                padding: .95rem 1rem;
+            }
 
-        .back-to-top.show {
-            opacity: 1;
-            visibility: visible;
-        }
+            .promo-wa-box {
+                padding: 1.25rem 1rem;
+            }
 
-        .back-to-top:hover {
-            background: var(--dm-orange);
-            color: #fff;
+            .promo-wa-box .btn-wa {
+                width: 100%;
+                justify-content: center;
+                padding: .75rem 1rem;
+            }
+
+            .cta-banner {
+                padding: 2rem 1.1rem;
+            }
+
+            .cta-banner .btn-whatsapp {
+                width: 100%;
+                justify-content: center;
+            }
         }
 
         /* Footer */
@@ -2086,7 +2151,7 @@
                         <h3>Artikel Terkait</h3>
                         <div class="related-item">
                             <div class="thumb">
-                                <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=160&h=124&q=70&fm=webp"
+                                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=160&h=124&q=70&fm=webp"
                                     alt="Resep Rack of Lamb" loading="lazy" width="80" height="62" decoding="async">
                             </div>
                             <div class="content">
@@ -2159,11 +2224,11 @@
                 </svg>
                 Rekomendasi Paket Daging Pilihan
             </h2>
-            <div class="recommendations grid-240">
+            <div class="recommendations grid-3-col">
                 <div class="recommend-item">
                     <div class="thumb">
-                        <img src="https://images.unsplash.com/photo-1603048588665-791ca8aea617?auto=format&fit=crop&w=600&h=320&q=70&fm=webp"
-                            alt="Paket Rack of Lamb Premium" loading="lazy" width="600" height="320" decoding="async">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&h=500&q=75&fm=webp"
+                            alt="Paket Rack of Lamb Premium" loading="lazy" width="800" height="500" decoding="async">
                     </div>
                     <div class="body">
                         <span class="prod-cat-label">Paket Premium</span>
@@ -2174,8 +2239,8 @@
                 </div>
                 <div class="recommend-item">
                     <div class="thumb">
-                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&h=320&q=70&fm=webp"
-                            alt="Paket BBQ Gathering" loading="lazy" width="600" height="320" decoding="async">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&h=500&q=75&fm=webp"
+                            alt="Paket BBQ Gathering" loading="lazy" width="800" height="500" decoding="async">
                     </div>
                     <div class="body">
                         <span class="prod-cat-label">Paket BBQ</span>
@@ -2186,8 +2251,8 @@
                 </div>
                 <div class="recommend-item">
                     <div class="thumb">
-                        <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=600&h=320&q=70&fm=webp"
-                            alt="Daging Domba Fresh Potongan" loading="lazy" width="600" height="320" decoding="async">
+                        <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=800&h=500&q=75&fm=webp"
+                            alt="Daging Domba Fresh Potongan" loading="lazy" width="800" height="500" decoding="async">
                     </div>
                     <div class="body">
                         <span class="prod-cat-label">Fresh Cut</span>
@@ -2337,20 +2402,25 @@
         </div>
     </footer>
 
-    <!-- ===== FLOATING: WA + BACK TO TOP ===== -->
-    <a href="https://wa.me/6282152188508?text=Halo%20Dombastis%20A5,%20saya%20ingin%20memesan%20daging%20domba%20segar."
-        target="_blank" rel="noopener noreferrer" class="float-wa" aria-label="Chat WhatsApp Dombastis A5">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
-            <path
-                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z" />
-        </svg>
-        <span class="tooltip">Pesan Daging (0821-5218-8508)</span>
-    </a>
-    <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-            <path d="m18 15-6-6-6 6" />
-        </svg>
-    </button>
+    <!-- ===== FLOATING STACK (Identik dengan index.html) ===== -->
+    <div class="floating-stack">
+        <button type="button" class="btn-back-top" id="btnBackTop" aria-label="Kembali ke atas halaman"
+            aria-hidden="true" inert>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                aria-hidden="true">
+                <path d="m18 15-6-6-6 6" />
+            </svg>
+        </button>
+        <a href="https://wa.me/6282152188508?text=Halo%20DOMBASTIS,%20saya%20ingin%20memesan%20daging%20domba%20segar."
+            class="btn-wa-float" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp DOMBASTIS">
+            <!-- Logo WhatsApp Resmi -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 448 512" fill="currentColor"
+                aria-hidden="true">
+                <path
+                    d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.7 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+            </svg>
+        </a>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/main.js"></script>
@@ -2420,19 +2490,7 @@
                 });
             });
 
-            /* ===== 4. BACK TO TOP ===== */
-            const backBtn = document.getElementById('backToTop');
-            if (backBtn) {
-                window.addEventListener('scroll', () => {
-                    if (window.scrollY > 400) backBtn.classList.add('show');
-                    else backBtn.classList.remove('show');
-                });
-                backBtn.addEventListener('click', () => {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                });
-            }
-
-            /* ===== 5. SCROLL PROGRESS BAR ===== */
+            /* ===== 4. SCROLL PROGRESS BAR ===== */
             const progress = document.getElementById('scrollProgress');
             if (progress) {
                 window.addEventListener('scroll', () => {
