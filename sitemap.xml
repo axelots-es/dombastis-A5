@@ -65,9 +65,20 @@
   <!-- ==================== HALAMAN BLOG ==================== -->
   <url>
     <loc>https://dombastis.web.id/blog.html</loc>
-    <lastmod>2026-10-17</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://dombastis.web.id/blog/mengenal-dombastis-a5-daging-domba-segar.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=1200&amp;q=75</image:loc>
+      <image:title>Mengenal Dombastis A5: Layanan Pengiriman Daging Domba Segar &amp; Premium Langsung ke Rumah Anda</image:title>
+    </image:image>
   </url>
 
   <url>

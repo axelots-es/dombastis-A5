@@ -14,6 +14,12 @@
   --gold-accent: #D97706;
   --gold-light: #F59E0B;
 
+  /* Button green colors */
+  --btn-green: #095E41;
+  --btn-green-hover: #074a33;
+  --btn-green-dark: #053624;
+  --btn-green-shadow: rgba(9, 94, 65, 0.35);
+
   /* Dark surfaces */
   --dark-bg: #120E0C;
   --dark-surface: #1C1714;
@@ -185,14 +191,14 @@ img {
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  background: var(--orange-primary);
+  background: var(--btn-green);
   color: #fff;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.35);
+  box-shadow: 0 4px 12px var(--btn-green-shadow);
   opacity: 0;
   visibility: hidden;
   transform: translateY(8px);
@@ -207,7 +213,7 @@ img {
 }
 
 .btn-back-top:hover {
-  background: var(--orange-hover);
+  background: var(--btn-green-hover);
 }
 
 /* FIX: tooltip WA butuh parent position relative */
@@ -309,25 +315,67 @@ img {
 
 /* ---------- Buttons ---------- */
 .btn-primary-custom {
-  background: linear-gradient(135deg, var(--orange-primary), var(--gold-accent));
-  color: #fff;
-  border: none;
+  background-color: var(--btn-green);
+  color: #fff !important;
+  border: 1px solid var(--btn-green);
   font-weight: 600;
   padding: 0.75rem 1.75rem;
   border-radius: 50px;
-  box-shadow: 0 4px 15px rgba(234, 88, 12, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 15px var(--btn-green-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-primary-custom:hover {
-  background: linear-gradient(135deg, var(--orange-hover), #B45309);
-  color: #fff;
+  background-color: var(--btn-green-hover);
+  border-color: var(--btn-green-hover);
+  color: #fff !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.4);
+  box-shadow: 0 6px 20px rgba(9, 94, 65, 0.45);
 }
 
 .btn-primary-custom:focus-visible {
-  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.35);
+  box-shadow: 0 0 0 3px rgba(9, 94, 65, 0.35);
+}
+
+.btn-primary-custom:active {
+  background-color: var(--btn-green-dark);
+  border-color: var(--btn-green-dark);
+  transform: translateY(0);
+}
+
+/* Button overrides for green #095E41 */
+.btn-primary {
+  background-color: var(--btn-green) !important;
+  border-color: var(--btn-green) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 15px var(--btn-green-shadow);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--btn-green-hover) !important;
+  border-color: var(--btn-green-hover) !important;
+  color: #fff !important;
+}
+
+.btn-outline-warning,
+.btn-outline-custom {
+  color: var(--btn-green) !important;
+  border-color: var(--btn-green) !important;
+}
+
+.btn-outline-warning:hover,
+.btn-outline-warning:focus,
+.btn-outline-warning:active,
+.btn-outline-custom:hover,
+.btn-outline-custom:focus,
+.btn-outline-custom:active {
+  background-color: var(--btn-green) !important;
+  border-color: var(--btn-green) !important;
+  color: #ffffff !important;
+  box-shadow: 0 4px 15px var(--btn-green-shadow);
 }
 
 /* ---------- Badges ---------- */
@@ -518,9 +566,9 @@ footer {
 
 .filter-btn:hover,
 .filter-btn.active {
-  background: var(--orange-primary);
+  background: var(--btn-green);
   color: #fff;
-  border-color: var(--orange-primary);
+  border-color: var(--btn-green);
 }
 
 /* ---------- Tabel perbandingan ---------- */
@@ -543,14 +591,14 @@ footer {
 }
 
 .accordion-button:not(.collapsed) {
-  color: var(--orange-primary);
-  background: var(--orange-light);
+  color: var(--btn-green);
+  background: rgba(9, 94, 65, 0.08);
   box-shadow: none;
 }
 
 .accordion-button:focus {
-  box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.25);
-  border-color: var(--orange-primary);
+  box-shadow: 0 0 0 3px rgba(9, 94, 65, 0.25);
+  border-color: var(--btn-green);
 }
 
 .accordion-item {
@@ -652,9 +700,9 @@ footer {
 }
 
 .share-btn:hover {
-  background: var(--orange-primary);
+  background: var(--btn-green);
   color: #fff;
-  border-color: var(--orange-primary);
+  border-color: var(--btn-green);
   transform: translateY(-2px);
 }
 

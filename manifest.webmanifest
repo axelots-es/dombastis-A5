@@ -1,5 +1,5 @@
 {
-    "name": "DOMBASTIS — Daging Domba Premium Grade A5",
+    "name": "DOMBASTIS — daging domba premium",
     "short_name": "DOMBASTIS",
     "description": "Supplier daging domba segar premium Grade A5 halal & higienis untuk keluarga, aqiqah, hajatan, resto & katering di Nganjuk, Jawa Timur.",
     "id": "/",
@@ -95,7 +95,7 @@
             "sizes": "1280x720",
             "type": "image/png",
             "form_factor": "wide",
-            "label": "Beranda DOMBASTIS - Daging Domba Premium Grade A5"
+            "label": "Beranda DOMBASTIS - daging domba premium"
         },
         {
             "src": "image/screenshot-mobile.png",
